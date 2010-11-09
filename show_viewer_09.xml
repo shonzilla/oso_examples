@@ -8,8 +8,8 @@
     
       <script type="text/javascript">        
         gadgets.util.registerOnLoadHandler(function(){
-          osapi.people.getViewer({fields: ['name']}).execute(function(result) {
-            document.getElementById('viewer').innerHTML = result.name.givenName;
+          osapi.people.getViewer().execute(function(result) {
+            document.getElementById('viewer').innerHTML = result.displayName;
           });
         });
       </script>
